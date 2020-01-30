@@ -52,6 +52,9 @@ export const OPTIONS: OptionDescriptions<Required<ParsedArgs>> = {
 	'telemetry': { type: 'boolean', cat: 'o', description: localize('telemetry', "Shows all telemetry events which VS code collects.") },
 	'folder-uri': { type: 'string[]', cat: 'o', args: 'uri', description: localize('folderUri', "Opens a window with given folder uri(s)") },
 	'file-uri': { type: 'string[]', cat: 'o', args: 'uri', description: localize('fileUri', "Opens a window with given file uri(s)") },
+	'stream-uri': { type: 'string', cat: 'o', args: 'uri', description: localize('streamUri', "Opens a window with the given stream uri. Supports TCP and Unix sockets and Windows named pipes.") },
+	'stream-name': { type: 'string', cat: 'o', description: localize('streamName', "Used with --stream-uri to set the title of the editor.") },
+	'stream-language': { type: 'string', cat: 'o', description: localize('streamLanguage', "Used with --stream-uri to set the language of the editor.") },
 
 	'extensions-dir': { type: 'string', deprecates: 'extensionHomePath', cat: 'e', args: 'dir', description: localize('extensionHomePath', "Set the root path for extensions.") },
 	'builtin-extensions-dir': { type: 'string' },

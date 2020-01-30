@@ -11,6 +11,9 @@ export interface ParsedArgs {
 	_: string[];
 	'folder-uri'?: string[]; // undefined or array of 1 or more
 	'file-uri'?: string[]; // undefined or array of 1 or more
+	'stream-uri'?: string;
+	'stream-name'?: string;
+	'stream-language'?: string;
 	_urls?: string[];
 	help?: boolean;
 	version?: boolean;
